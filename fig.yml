@@ -1,0 +1,7 @@
+neo4j:
+  build: docker/neo4j
+  ports:
+    - "7474:7474"
+  volumes:
+    - "tmp/neo4j-data/:/bindmount/data/"
+  privileged: true

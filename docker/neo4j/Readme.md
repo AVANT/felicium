@@ -1,0 +1,1 @@
+This docker directory borrows heavily from https://github.com/tpires/neo4j with a few adjustments that allows you to bind mount the data dir with boot2docker using bindfs.

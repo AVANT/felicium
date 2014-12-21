@@ -1,0 +1,15 @@
+default:
+  key1: default1
+  key2: 1000
+  key3:
+    - arrayDefault1
+    - arrayDefault2
+    - arrayDefault3
+test:
+  key1: 2000
+
+production:
+  key3:
+    - arrayProduction1
+    - arrayProduction2
+    - arrayProduction3

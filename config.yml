@@ -1,0 +1,24 @@
+###
+## Default mirrors defaults set by the application when values are not found
+#
+default:
+  web_port: 8080
+  bind_address: 0.0.0.0
+  static_dir: public
+  # Compressions levels my be set to
+  # BestSpeed or 1
+  # NoCompression or 0
+  # DefaultCompression or -1
+  # BestCompression or 9
+  compression_level: BestSpeed
+  # When logs are set to "-" they output to Stdout
+  serverLog: "-"
+  accessLog: "-"
+
+development:
+  web_port: 8080
+  bind_address: 127.0.0.1
+  static_dir: public
+  compression_level: BestSpeed
+  serverLog: log/server.log
+  accessLog: log/access.log
