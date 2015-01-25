@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	"github.com/vvvntdotorg/felicium/config"
-	"github.com/vvvntdotorg/felicium/config/hashConfig"
+	"github.com/avant/felicium/config"
+	"github.com/avant/felicium/config/hashConfig"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/gopkg.in/yaml.v2"
+	"github.com/avant/felicium/Godeps/_workspace/src/gopkg.in/yaml.v2"
 )
 
 type configuration struct {
