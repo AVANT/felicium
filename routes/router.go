@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/avantdotorg/felicium/Godeps/_workspace/src/github.com/gorilla/mux"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/gorilla/mux"
 )
 
 func NewRouter() *mux.Router {
