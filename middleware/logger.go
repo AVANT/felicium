@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"bytes"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/gorilla/handlers"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/gorilla/handlers"
 	"log"
 	"net/http"
 )
