@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/vvvntdotorg/felicium/app"
-	"github.com/vvvntdotorg/felicium/config"
-	"github.com/vvvntdotorg/felicium/middleware"
-	"github.com/vvvntdotorg/felicium/routes"
+	"github.com/avant/felicium/app"
+	"github.com/avant/felicium/config"
+	"github.com/avant/felicium/middleware"
+	"github.com/avant/felicium/routes"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/codegangsta/negroni"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/phyber/negroni-gzip/gzip"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/codegangsta/negroni"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/phyber/negroni-gzip/gzip"
 )
 
 func determineCompressionLevel(desiredLevel interface{}) int {
