@@ -1,7 +1,7 @@
 package hashConfig
 
 import (
-	"github.com/vvvntdotorg/felicium/config"
+	"github.com/avant/felicium/config"
 )
 
 type configuration struct {
