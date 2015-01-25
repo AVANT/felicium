@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	. "github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey"
-	"github.com/vvvntdotorg/felicium/config"
+	. "github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey"
+	"github.com/avant/felicium/config"
 )
 
 type expectedResults []struct {
