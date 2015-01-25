@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/vvvntdotorg/felicium/config"
+	"github.com/avant/felicium/config"
 
-	_ "github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/jmcvetta/neoism"
+	_ "github.com/avant/felicium/Godeps/_workspace/src/github.com/jmcvetta/neoism"
 )
 
 type App struct {
