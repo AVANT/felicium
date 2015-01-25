@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 
-	"github.com/vvvntdotorg/felicium/app/handlers"
-	"github.com/vvvntdotorg/felicium/config/yamlConfig"
+	"github.com/avantdotorg/felicium/app/handlers"
+	"github.com/avantdotorg/felicium/config/yamlConfig"
 )
 
 func main() {
