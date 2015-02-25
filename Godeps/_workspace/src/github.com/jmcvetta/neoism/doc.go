@@ -100,6 +100,6 @@ package neoism
 
 // Imports required for tests - so they work with "go get".
 import (
-	_ "github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/bmizerany/assert"
-	_ "github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/jmcvetta/randutil"
+	_ "github.com/avant/felicium/Godeps/_workspace/src/github.com/bmizerany/assert"
+	_ "github.com/avant/felicium/Godeps/_workspace/src/github.com/jmcvetta/randutil"
 )

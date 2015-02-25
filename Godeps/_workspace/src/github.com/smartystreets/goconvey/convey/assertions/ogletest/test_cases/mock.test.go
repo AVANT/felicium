@@ -18,10 +18,10 @@ package oglematchers_test
 import (
 	"image/color"
 	"testing"
-	. "github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglematchers"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglemock"
-	. "github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/ogletest"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/ogletest/test_cases/mock_image"
+	. "github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglematchers"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglemock"
+	. "github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/ogletest"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/ogletest/test_cases/mock_image"
 )
 
 ////////////////////////////////////////////////////////////////////////

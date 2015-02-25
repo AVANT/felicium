@@ -18,7 +18,7 @@ package oglematchers_test
 import (
 	"fmt"
 	"testing"
-	. "github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/ogletest"
+	. "github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/ogletest"
 )
 
 func TestNoCases(t *testing.T) { RunTests(t) }

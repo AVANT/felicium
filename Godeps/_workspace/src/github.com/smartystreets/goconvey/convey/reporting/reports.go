@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/gotest"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/gotest"
 )
 
 ////////////////// ScopeReport ////////////////////

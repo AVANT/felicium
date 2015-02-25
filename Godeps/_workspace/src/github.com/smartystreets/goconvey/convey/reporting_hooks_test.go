@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/reporting"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/reporting"
 )
 
 func TestSingleScopeReported(t *testing.T) {

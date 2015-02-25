@@ -3,7 +3,7 @@ package assertions
 import (
 	"fmt"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglematchers"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglematchers"
 )
 
 // ShouldBeGreaterThan receives exactly two parameters and ensures that the first is greater than the second.

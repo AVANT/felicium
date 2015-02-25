@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglematchers"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglematchers"
 )
 
 // InternalExpectation is exported for purposes of testing only. You should not

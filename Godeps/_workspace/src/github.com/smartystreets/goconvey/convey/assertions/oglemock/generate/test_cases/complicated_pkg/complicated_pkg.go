@@ -22,7 +22,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglemock/generate/test_cases/renamed_pkg"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglemock/generate/test_cases/renamed_pkg"
 )
 
 type Byte uint8

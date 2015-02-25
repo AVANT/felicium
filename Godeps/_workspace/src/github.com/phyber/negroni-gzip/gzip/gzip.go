@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/codegangsta/negroni"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/codegangsta/negroni"
 )
 
 // These compression constants are copied from the compress/gzip package.

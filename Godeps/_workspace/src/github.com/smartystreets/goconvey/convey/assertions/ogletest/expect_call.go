@@ -18,7 +18,7 @@ package ogletest
 import (
 	"runtime"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglemock"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglemock"
 )
 
 // ExpectCall expresses an expectation that the method of the given name

@@ -16,8 +16,8 @@ NOTE: This example may only work on *nix systems due to gopass requirements.
 import (
 	"code.google.com/p/gopass"
 	"fmt"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/jmcvetta/napping"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/kr/pretty"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/jmcvetta/napping"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/kr/pretty"
 	"log"
 	"net/url"
 	"time"

@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/vvvntdotorg/felicium",
+	"ImportPath": "github.com/avant/felicium",
 	"GoVersion": "go1.3.1",
 	"Packages": [
 		"./..."

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	. "gopkg.in/check.v1"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/gopkg.in/yaml.v2"
+	"github.com/avant/felicium/Godeps/_workspace/src/gopkg.in/yaml.v2"
 	"net"
 )
 

@@ -8,7 +8,7 @@ package napping
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/bmizerany/assert"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/bmizerany/assert"
 	"io/ioutil"
 	"log"
 	"net/http"

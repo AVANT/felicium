@@ -6,7 +6,7 @@ package neoism
 
 import (
 	"fmt"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/bmizerany/assert"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/bmizerany/assert"
 	"strconv"
 	"testing"
 )

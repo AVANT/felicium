@@ -3,8 +3,8 @@ package convey
 import (
 	"fmt"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/jtolds/gls"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/reporting"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/jtolds/gls"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/reporting"
 )
 
 type conveyErr struct {

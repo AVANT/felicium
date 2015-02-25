@@ -3,7 +3,7 @@ package yaml_test
 import (
 	"errors"
 	. "gopkg.in/check.v1"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/gopkg.in/yaml.v2"
+	"github.com/avant/felicium/Godeps/_workspace/src/gopkg.in/yaml.v2"
 	"math"
 	"net"
 	"reflect"

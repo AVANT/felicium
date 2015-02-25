@@ -11,7 +11,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/jmcvetta/napping"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/jmcvetta/napping"
 	"log"
 )
 

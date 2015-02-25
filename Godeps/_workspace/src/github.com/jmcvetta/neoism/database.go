@@ -6,7 +6,7 @@ package neoism
 
 import (
 	"errors"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/jmcvetta/napping"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/jmcvetta/napping"
 	"log"
 	"net/http"
 	"net/url"

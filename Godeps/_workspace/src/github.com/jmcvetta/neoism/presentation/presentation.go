@@ -6,7 +6,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/jmcvetta/neoism"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/jmcvetta/neoism"
 	"log"
 )
 

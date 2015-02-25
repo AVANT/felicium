@@ -5,7 +5,7 @@
 package neoism
 
 import (
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/kr/pretty"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/kr/pretty"
 	"runtime"
 	"strconv"
 	"strings"

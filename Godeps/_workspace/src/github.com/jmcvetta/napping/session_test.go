@@ -8,7 +8,7 @@ package napping
 import (
 	"encoding/base64"
 	"encoding/json"
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/jmcvetta/randutil"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/jmcvetta/randutil"
 	"io/ioutil"
 	"log"
 	"net/http"

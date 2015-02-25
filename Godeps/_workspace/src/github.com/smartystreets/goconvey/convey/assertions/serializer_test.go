@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/reporting"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/reporting"
 )
 
 func TestSerializerCreatesSerializedVersionOfAssertionResult(t *testing.T) {

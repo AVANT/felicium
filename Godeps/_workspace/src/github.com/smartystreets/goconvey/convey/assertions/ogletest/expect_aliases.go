@@ -19,7 +19,7 @@ import (
 	"path"
 	"runtime"
 
-	"github.com/vvvntdotorg/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglematchers"
+	"github.com/avant/felicium/Godeps/_workspace/src/github.com/smartystreets/goconvey/convey/assertions/oglematchers"
 )
 
 func getCallerForAlias() (fileName string, lineNumber int) {
