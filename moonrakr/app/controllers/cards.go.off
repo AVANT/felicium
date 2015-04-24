@@ -1,0 +1,47 @@
+package controllers
+
+import (
+	"github.com/robfig/revel"
+	"github.com/moonrakr/app/lib/interfaces"
+	"github.com/moonrakr/app/models"
+)
+
+type Card struct {
+	*revel.Controller
+}
+
+func GetRenderable(s string) (interfaces.Renderable, error) {
+	switch s {
+	case "posts":
+		models.NewPost()
+	case "threads":
+		models.NewPost()
+	case "users":
+		models.NewPost()
+	}
+	return "", nil
+}
+
+func (c *Card) All() revel.Result {
+	return c.RenderJson("")
+}
+
+func (c *Card) Index() revel.Result {
+	var status string = p.Params.Get("type")
+	return c.RenderJson("")
+}
+
+func (c *Card) Show() revel.Result {
+	var status string = p.Params.Get("type")
+	return c.RenderJson("")
+}
+
+func (c *Card) Update() revel.Result {
+	var status string = p.Params.Get("type")
+	return c.RenderJson("")
+}
+
+func (c *Card) Delete() revel.Result {
+	var status string = p.Params.Get("type")
+	return c.RenderJson("")
+}

@@ -1,0 +1,10 @@
+id: User.GetId
+createdAt: User.GetCreatedAt
+updatedAt: User.UpdatedAt
+bio: User.GetBio
+username: User.GetUsername
+userType: User.GetUserType
+fullName: User.GetFullName
+userImage: User.GetUserImage as Media {
+	include(medium/public/media, Media )
+}

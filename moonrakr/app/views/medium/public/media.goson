@@ -1,0 +1,7 @@
+id: Media.GetId
+createdAt: Media.GetCreatedAt
+updatedAt: Media.UpdatedAt
+title: Media.GetTitle
+altText: Media.GetAltText
+contentType: Media.GetContentType
+filelink: Media.GetUrl

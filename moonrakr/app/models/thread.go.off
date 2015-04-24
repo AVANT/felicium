@@ -1,0 +1,91 @@
+package models
+
+/////
+////  Thread type and related constructs
+///
+
+const threadTemplate = "threads/public/thread"
+
+//Thread is the main Thread struct that is connected to the db it inherits from Post
+
+type Thread struct {
+	*Post
+}
+
+//NewThread creates a new Thread struct and initalizes it correctly
+//Because this inherits from post but the model uses the modle name we have to get a little creative
+func NewThread() *Thread {
+	return &Thread{
+		&Post{
+			Connection.NewModel("thread"),
+		},
+	}
+}
+
+//Post is a collection of *Post it implements goson.Collection
+type Threads []*Thread
+
+func (t *Threads) Len() int                                         { return len(*t) }
+func (t *Threads) Get(index int) interface{}                        { return (*t)[index] }
+func (t *Threads) Add(thread *Thread)                               { (*t) = append((*t), thread) }
+func (t *Threads) RenderElement(i int) (*results.JsonResult, error) { return (*t)[i].Render() }
+func (t *Threads) Render() (*results.JsonResult, error)             { return results.RenderRenderableCollection(t) }
+func (t *Threads) FromInterfaceArray(array []interface{}) {
+	for i := range array {
+		threadObject := array[i].(map[string]interface{})
+		thread := NewThread()
+		thread.ThreadMassAssign(&threadObject)
+		thread.SetId(threadObject["id"].(string))
+		p.Add(thread)
+	}
+}
+
+func (t *Thread) Render() (*results.JsonResult, error) {
+	buffer := new(bytes.Buffer)
+	w := bufio.NewWriter(buffer)
+	err := goson.RenderTo(w, threadTemplate, goson.Args{"Thread": t})
+	if err != nil {
+		return new(results.JsonResult), err
+	}
+	w.Flush()
+	return &results.JsonResult{buffer}, nil
+}
+
+//This will safely set fields of the post that can be set by mass assignment
+func (t *Thread) ThreadMassAssign(bulk *map[string]interface{}) (*Thread, error) {
+	t = t.PostMassAssign(bulk) //call to superclass
+	jq := jsonq.NewQuery(*bulk)
+	for k := range *bulk {
+		switch k {
+		case "jsModule":
+			s, err := jq.String(k)
+			if err == nil {
+				t.SetJsModule(s)
+			}
+		}
+	}
+	return t, nil
+}
+
+/////
+//// Setters and getters for threads
+///
+
+///
+// jsModule
+///
+
+//this was a []byte but the seed data isn't right so moving on for now. Same with the body
+func (t *Thread) GetJsModule() string {
+	js, _ := t.QueryObject().String("jsModule")
+	return js
+}
+
+func (t *Thread) SetJsModule(js string) {
+	t.SetValue("jsModule", js)
+}
+
+type Modable interface {
+	Modelable
+	Renderable
+}

@@ -1,0 +1,89 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+module:testrunner
+
+
+############# Sessions ##############
+POST  	/login 									Sessions.Login
+GET  	/logout 								Sessions.Logout
+
+############### Tags ################
+
+GET 	/tags 									Tags.Index
+
+############### Posts ###############
+
+GET		/posts 									Posts.Index
+GET    	/posts/:id           					Posts.Show
+POST 	/posts 									Posts.Create
+PUT		/posts/:id 								Posts.Update
+DELETE  /posts/:id 								Posts.Delete
+
+GET  	/posts/for/:id 							Posts.For
+PUT 	/posts/:id/recommendation 				Posts.MakeRecomendation
+DELETE 	/posts/:id/recommendation 				Posts.UndoRecomendation
+GET 	/posts/:id/comments 					Posts.Comments
+
+############# Comments ##############
+
+GET 	/comments 								Comments.Index
+GET 	/comments/:id 							Comments.Show
+PUT 	/comments/:id 							Comments.Update
+DELETE 	/comments/:id 							Comments.Delete
+
+GET 	/comments/for/:id 						Comments.GetFor
+POST 	/comments/for/:id 						Comments.CreateFor
+GET 	/comments/:id/voteUp 					Comments.VoteUp
+GET 	/comments/:id/voteDown 					Comments.VoteDown
+
+############### Users ###############
+
+GET		/users 									Users.Index
+GET    	/users/:id           					Users.Show
+POST 	/users 									Users.Create
+PUT		/users/:id 								Users.Update
+DELETE  /users/:id 								Users.Delete
+
+############### Media ###############
+
+GET 	/media 									Medium.Index
+GET 	/media/:id 								Medium.Show
+POST 	/media 									Medium.Create
+PUT 	/media/:id 								Medium.Update
+DELETE 	/media/:id 								Medium.Delete
+
+GET 	/media/for/:id 							Medium.For
+
+
+############# Cards ##############
+
+#GET		/cards									Cards.All
+#GET		/cards/:type							Cards.Index
+#GET    	/cards/:type/:id						Cards.Show
+#POST 	/cards/:type							Cards.Create
+#PUT		/cards/:type/:id 						Cards.Update
+#DELETE  /cards/:type/:id 						Cards.Delete
+
+############### SiteMap ###############
+
+GET /sitemap.xml								SiteMap.Index
+
+############### RSS ###############
+
+GET /rss 										Feed.Rss
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+###
+#	nginx will now be handling this for us
+###
+
+# Map static resources from the /app/public folder to the /public path
+# GET     /public/*filepath                       Static.Serve("public")
+
+# Catch all
+OPTIONS /*url									App.Options
+*       /:controller/:action                    :controller.:action

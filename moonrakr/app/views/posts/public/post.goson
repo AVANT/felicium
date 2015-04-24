@@ -1,0 +1,25 @@
+id: Post.GetSlug
+createdAt: Post.GetCreatedAt
+updatedAt: Post.UpdatedAt
+publishedAt: Post.GetPublishedAt
+title: Post.GetTitle
+excerpt: Post.GetExcerpt
+body: Post.GetBody
+meta: Post.GetMeta
+tags: Post.GetTags
+promotion: Post.GetPromtion
+status: Post.GetStatus
+authorsArray: Post.GetAuthorsArray
+javascriptData: Post.GetJavascriptData
+cssData: Post.GetCssData
+htmlData: Post.GetHtmlData
+moduleEnabled: Post.GetModuleEnabled
+media: Media in Post.GetMedia {
+	include(medium/public/media, Media)
+}
+headerImage: Post.GetHeaderImage as Media {
+	include(medium/public/media, Media )
+}
+authors: User in Post.GetAuthors {
+	include(users/public/user, User)
+}
